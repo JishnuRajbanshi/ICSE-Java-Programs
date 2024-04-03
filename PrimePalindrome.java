@@ -22,22 +22,14 @@ public class PrimePalindrome
         int count=0;
         for (int i=1;i<=c;i++)
         {
-            if (c%i==0) 
+            if ((c%i==0) && (s%i==0))
             {
                 count++;
             }
         }
 
-        int count_2=0;
-        for (int i=1;i<=s;i++)
-        {
-            if (s%i==0)
-            {
-                count_2++;
-            }
-        }
         
-        if ((c==s) && (count==2) && (count_2==2))
+        if ((c==s) && (count==2))
         System.out.println("Prime-Palindrome Number");
         else
         System.out.println("Not Prime-Palindrome Number");
