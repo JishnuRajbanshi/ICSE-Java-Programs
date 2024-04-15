@@ -14,7 +14,6 @@ public class Add {
         System.out.print("Enter the second number: ");
         String input2 = reader.readLine();
         int num2 = Integer.parseInt(input2);
-
         int sum = num1 + num2;
         System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
     }
