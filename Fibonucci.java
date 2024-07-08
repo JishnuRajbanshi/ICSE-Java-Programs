@@ -4,7 +4,7 @@ public class Fibonucci {
     public static void main (String [] arStrings)
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the No. of Terms -");
+        System.out.print("Enter the No. of Terms -");
         int n=sc.nextInt();
         sc.close();
         int a=0,b=1,c;

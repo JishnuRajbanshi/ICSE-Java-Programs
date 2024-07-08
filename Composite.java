@@ -20,7 +20,7 @@ public class Composite
             }
         }
 
-        if (count>1)
+        if (count!=2)
         System.out.println("Composite Number");
         else
         System.out.println("Not Composite Number");
