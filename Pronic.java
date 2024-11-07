@@ -2,27 +2,27 @@ import java.util.Scanner;
 
 public class Pronic
 {
-    public static void main () 
+    public static void main (String [] args) 
     {
         Scanner sc = new Scanner(System.in);
+        int num,pronic=0;
         System.out.print("Enter the Number - ");
-        int num = sc.nextInt();
+        num = sc.nextInt();
         sc.close();
         
-        boolean isPronic = false;
         
-        for (int i = 1; i <= num - 1; i++) 
+        for (int i = 1; i < num ; i++) 
         {
             if (i * (i + 1) == num) 
             {
-                isPronic = true;
+                pronic++;
                 break;
             }
         }
         
-        if (isPronic)
+        if (pronic==1)
             System.out.println("Pronic Number");
         else
-            System.out.println("Not a Pronic Number");
+            System.out.println("Not Pronic Number");
     }
 }
